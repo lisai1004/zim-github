@@ -15,9 +15,7 @@ title: 我的Blog
 			<p>{{site.baseurl}}</p>
 　　　　　　<li>
 　　　　　　  {{ post.date | date_to_string }} 
-　　　　　　  <a href="{{ site.baseurl }}{{ post.url }}">
-				{{ post.title }}
-			  </a>
+　　　　　　  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.url }}</a>
 　　　　　　</li>
 
 　　　　{% endfor %}
