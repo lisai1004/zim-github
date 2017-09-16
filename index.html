@@ -12,11 +12,12 @@ title: 我的Blog
 　　　　{% for post in site.posts %}
 			<p>{{post.date}}</p>
 			<p>{{post.url}}</p>
+			<p>{{site.baseurl}}</p>
 　　　　　　<li>
 　　　　　　  {{ post.date | date_to_string }} 
 　　　　　　  <a href="{{ site.baseurl }}{{ post.url }}">
-　　　　　　      {{ post.title }}
-　　　　　　  </a>
+				{{ post.title }}
+			  </a>
 　　　　　　</li>
 
 　　　　{% endfor %}
